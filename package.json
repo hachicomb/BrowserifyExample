@@ -1,0 +1,19 @@
+{
+  "name": "Browserify example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "convert": "node ./node_modules/browserify/bin/cmd.js example.js -o public/bundle.js && node ./node_modules/serve/bin/serve.js ./public && exit 1",
+    "webapp": "node webapp.js && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "browserify-middleware": "^8.1.1",
+    "express": "^4.17.1",
+    "node-fetch": "^2.3.0",
+    "serve": "^12.0.0"
+  }
+}
